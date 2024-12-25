@@ -1,6 +1,8 @@
-# Project Name
-> Outline a brief description of your project.
+# Bike Sharing Model
+> The objective is to develop a robust linear regression model to predict the demand for shared bikes (cnt) based on the available independent variables. This model will enable the company to:
 
+> 1. Understand how various factors, such as weather conditions, seasonal variations, etc, influence bike-sharing demand.
+> 2. Leverage the model to forecast demand dynamics in new markets, helping the comapny to plan resources effectively.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -8,45 +10,39 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
-
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- **Background of the Project:**  
+  The growing trend of bike-sharing systems in urban environments has raised the need for efficient demand forecasting models. Accurate predictions of bike demand can help optimize the number of bikes available at different locations, improving customer satisfaction and operational efficiency.
+
+- **Business Problem:**  
+  The project aims to solve the problem of predicting bike-sharing demand in a city. The bike-sharing company needs to know how weather, season, holidays, and other factors influence the number of bikes needed. This helps the company plan for resources, manage bike availability, and optimize operations in different weather conditions and seasons.
+
+- **Dataset:**  
+  The dataset contains information about various factors like weather conditions, temperature, humidity, windspeed, season, and holidays, and their impact on bike-sharing demand (represented as "cnt"). This dataset includes both continuous variables (e.g., temperature, windspeed) and categorical variables (e.g., season, holiday).
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+* For Training Set
+  * R-squared value: 0.836
+  * Adjusted R-squared value: 0.832
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+* For Testing Set
+  * R-squared value: 0.805
+  * Adjusted R-squared value: 0.795
 
+* Best fitted line
+  * _cnt = 0.1996 + (0.2335 * yr) - (0.0980 * holiday) + (0.4915 * temp) - (0.1480 * windspeed) - (0.0669 * spring) + (0.0453 * summer) + (0.0831 * winter) - (0.0524 * Jul) + (0.0767 * Sep) - (0.2852 * light_rain) - (0.0816 * mist)_
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+- Pandas - version 2.2.3
+- Matplotlib - version 3.9.4
+- Seaborn - version 0.13.2
+- Sklearn - version 1.6.0
+- Statsmodels - version 0.14.4
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+This project was done as an assignment provided by upGrad.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@gauravkumarsahoo] - feel free to contact me!
